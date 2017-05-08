@@ -121,17 +121,19 @@ saveas(gcf,&apos;carandmod_signal.eps&apos;);
 <li><code>stem</code>：绘制离散序列。</li>
 <li><code>fftshift</code>：让正半轴部分和负半轴部分的图像分别关于各自的中心对称。因为直接用fft得出的数据与频率不是对应的，fftshift可以纠正过来</li>
 <li><code>(n-L/2)*2/L</code>：绘制频谱时的数字频率，单位为π,FFT对应的频率为<code>n*f_s/L</code>,其中L为总的FFT点数,n=0:L-1。此对应的是模拟频率，转换为数字频率就是<code>n*f_s/L*2*π/f_s</code>,即为n<em>2/L,由于使用了FFTSHIFT,所以为`(n-L/2)</em>2/L`.</li>
-<li><code>saveas</code>：gcf返回当前Figure对象的句柄值，并将当前figure保存为carandmod_signal.eps，此处使用eps格式，是为了更好地在latex中进行显示。<h3 id="filter与conv的区别"><a href="#filter与conv的区别" class="headerlink" title="filter与conv的区别"></a><code>filter</code>与<code>conv</code>的区别</h3><code>y=filter(p,d,x)</code>用来实现差分方程,d表示差分方程输出y的系数,p表示输入x的系数,而x表示输入序列。输出结果长度数等于x的长度。</li>
-</ul>
-<p><code>y=conv(x,h)</code>是用来实现卷级的,对x序列和h序列进行卷积,输出的结果个数等于x的长度与h的长度之和减去1。</p>
-<h3 id="freqs与freqz的区别"><a href="#freqs与freqz的区别" class="headerlink" title="freqs与freqz的区别"></a><code>freqs</code>与<code>freqz</code>的区别</h3><ul>
+<li><p><code>saveas</code>：gcf返回当前Figure对象的句柄值，并将当前figure保存为carandmod_signal.eps，此处使用eps格式，是为了更好地在latex中进行显示。</p>
+<h3 id="filter与conv的区别"><a href="#filter与conv的区别" class="headerlink" title="filter与conv的区别"></a><code>filter</code>与<code>conv</code>的区别</h3></li>
+<li><p><code>y=filter(p,d,x)</code>用来实现差分方程,d表示差分方程输出y的系数,p表示输入x的系数,而x表示输入序列。输出结果长度数等于x的长度。</p>
+</li>
+<li><p><code>y=conv(x,h)</code>是用来实现卷级的,对x序列和h序列进行卷积,输出的结果个数等于x的长度与h的长度之和减去1。</p>
+<h3 id="freqs与freqz的区别"><a href="#freqs与freqz的区别" class="headerlink" title="freqs与freqz的区别"></a><code>freqs</code>与<code>freqz</code>的区别</h3></li>
 <li><p><code>freqs</code>： Frequency response of analog filters.<a href="http://cn.mathworks.com/help/signal/ref/freqs.html?searchHighlight=freqs&amp;s_tid=doc_srchtitle" target="_blank" rel="external">freqs “MATLAB doc文档”</a></p>
 </li>
 <li><p><code>freqz</code>:  Frequency response of digital filter.<a href="http://cn.mathworks.com/help/signal/ref/freqz.html?searchHighlight=freqz&amp;s_tid=doc_srchtitle" target="_blank" rel="external">freqz “MATLAB doc文档”</a></p>
 </li>
 </ul>
 <h3 id="upsample与interp的区别"><a href="#upsample与interp的区别" class="headerlink" title="upsample与interp的区别"></a><code>upsample</code>与<code>interp</code>的区别</h3><ul>
-<li><code>upsample</code>: 增采样，进行补零操作。</li>
+<li><code>upsample</code> ： 增采样，进行补零操作。</li>
 <li><code>interp</code>： 同样是增采样，不过在进行补零操作后，还默认进行了sinc低通滤波。</li>
 </ul>
 
@@ -196,6 +198,11 @@ saveas(gcf,&apos;carandmod_signal.eps&apos;);
     <footer class="article-footer clearfix">
 <div class="article-catetags">
 
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/引用脚本之家的安装教程/">引用脚本之家的安装教程</a>
+  </div>
 
 </div>
 
@@ -338,6 +345,17 @@ saveas(gcf,&apos;carandmod_signal.eps&apos;);
   
 
   
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/引用脚本之家的安装教程/" title="引用脚本之家的安装教程">引用脚本之家的安装教程<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
 
   <div class="linkslist">
   <p class="asidetitle">友情链接</p>
